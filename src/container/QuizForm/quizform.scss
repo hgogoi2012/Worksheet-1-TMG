@@ -1,0 +1,35 @@
+.form__Container {
+    width: 45%;
+    padding: 20px;
+
+    margin: auto 10px;
+
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 950px) {
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+
+.quizContainer {
+    width: 100%;
+    background: radial-gradient(circle at right top, #c8d272, #bdc2bd);
+    height: 90vh;
+    border-radius: 10px;
+    padding: 30px;
+    overflow-y: scroll;
+
+
+
+
+    .submitBtn {
+        display: flex;
+        width: 60%;
+        margin: 45px auto;
+
+    }
+}

@@ -1,0 +1,91 @@
+.precontainer {
+
+    padding: 0 10px;
+
+    .intro__intro {
+        font-size: 32px;
+        font-family: 'Bree Serif', serif;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .pre__h1 {
+        font-weight: bold;
+        font-size: 22px;
+        margin: 20px 0;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .pre__view {
+        width: 60%;
+        margin-top: 30px;
+        margin-left: 20%;
+
+    }
+
+    .pre__para {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    li {
+        margin-left: 10px;
+        list-style-type: none;
+        margin-top: 10px;
+
+        &::marker {
+            display: none;
+        }
+
+        ul {
+            font-size: 18px;
+        }
+
+
+
+    }
+
+}
+
+
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+
+
+    .intro__headline {
+        color: rgb(14, 14, 14);
+        font-family: 'Bree Serif', serif;
+        font-size: 28px;
+        margin-bottom: 50px;
+        font-weight: bold;
+
+    }
+
+    .intro__userid {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 15px;
+
+    }
+
+    input {
+        height: 45px;
+        width: 100%;
+        margin-bottom: 40px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .checkBtn {
+        width: 30%;
+        font-weight: bold;
+    }
+
+
+}
