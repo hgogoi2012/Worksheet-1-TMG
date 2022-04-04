@@ -33,7 +33,7 @@ const Level2 = () => {
     ]
     const Q6 = [
         { key: 'It is the same thing.', value: 'It is the same thing.' },
-        { key: 'The USP of this game is actually learning to apply and providing', value: 'The USP of this game is actually learning to apply and providing' }
+        { key: 'The USP of this game is learning to apply the theoretical concepts built around a real product designed for real users, and providing a platform to actually practise the same, thereby earning certificates and other rewards.', value: 'The USP of this game is learning to apply the theoretical concepts built around a real product designed for real users, and providing a platform to actually practise the same, thereby earning certificates and other rewards.' }
     ]
     const Q7 = [
         { key: 'Rs. 2499', value: 'Rs. 2499' },
