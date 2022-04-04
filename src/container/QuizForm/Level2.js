@@ -102,14 +102,14 @@ const Level2 = () => {
                 label=''
                 name='Q4'
             />
-            <h1 className="work__title">What mode of promotion reached you?  </h1>
+            <h1 className="work__title">Which mode of promotion had reached out to you? </h1>
             <FormikControl
                 control='radio'
                 options={Q5}
                 label=''
                 name='Q5'
             />
-            <h1 className="work__title">Why should people us this product when information is available for free in the internet, when there are lots of reputed certified courses available in the market? </h1>
+            <h1 className="work__title">Why should people use this product; when information is available for free on the internet and when there are lots of reputed certified courses available in the market? </h1>
             <FormikControl
                 control='radio'
                 options={Q6}
