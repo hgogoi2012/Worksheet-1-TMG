@@ -14,8 +14,7 @@ const initialValues = {
     email: "",
     number: "",
     course: "",
-    skills: [],
-    skills1: [],
+
 };
 
 const QuizForm = ({ Auth, setAuth, PDF, setPDF }) => {
@@ -26,7 +25,7 @@ const QuizForm = ({ Auth, setAuth, PDF, setPDF }) => {
     const [Loading, setLoading] = useState(false)
     const isEndStep = activeStep === 2;
     const isLastStep = activeStep === 1;
-    const url = "https://script.google.com/macros/s/AKfycbyu88bUFOe2YqSuU5wcokSpogAki7loq9e2kB__qX7DykKtb5g/exec"
+    const url = "https://script.google.com/macros/s/AKfycbyzT_wK0TF9ea3_mtWM60KSadPSwr7hU9k5_sq0CYcx_cOhZ_79Tdtu-CkBImw-9yDB/exec"
 
     // const currentValidationSchema = validationSchema[activeStep];
 

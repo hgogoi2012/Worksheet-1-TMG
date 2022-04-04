@@ -11,7 +11,7 @@ const Intro = (props) => {
     const toast = useToast()
     const [loading, setLoading] = useState(false)
     const url =
-        "https://script.google.com/macros/s/AKfycbyu88bUFOe2YqSuU5wcokSpogAki7loq9e2kB__qX7DykKtb5g/exec";
+        "https://script.google.com/macros/s/AKfycbyzT_wK0TF9ea3_mtWM60KSadPSwr7hU9k5_sq0CYcx_cOhZ_79Tdtu-CkBImw-9yDB/exec";
 
     const handleClick = () => {
         setLoading(true)
@@ -19,7 +19,7 @@ const Intro = (props) => {
             .then((response) => response.json())
             .then((response) => {
                 response.find(function (abc) {
-                    if (abc.Pass === id) {
+                    if (abc.Pass == id) {
                         props.setAuth(true)
                         props.getData(id);
                         toast({
@@ -32,6 +32,7 @@ const Intro = (props) => {
 
 
                     }
+
                     setLoading(false)
                     return (console.log("Login Check"))
                 });
