@@ -2,6 +2,7 @@ import React from 'react'
 import FormikControl from './FormikControl'
 import './Level2.scss'
 import { Field } from 'formik'
+import { motion } from 'framer-motion'
 
 const Level2 = () => {
 
@@ -18,17 +19,46 @@ const Level2 = () => {
     ]
     const Q3 = [
         { key: "Yes, there can't be a better win-win deal where students get to learn as well as earn stipends and certificates at such a minimal price.", value: "Yes, there can't be a better win-win deal where students get to learn as well as earn stipends and certificates at such a minimal price." },
-        { key: 'Not sure, I am a bit dubious about the pricing. ', value: 'Not Sure' },
+        { key: 'Not sure, I am a bit dubious about the pricing. ', value: 'Not sure, I am a bit dubious about the pricing.' },
 
     ]
     const Q4 = [
         { key: 'By being invited by an existing player ', value: 'By being invited by an existing player' },
         { key: 'By purchasing from college library', value: 'By purchasing from college library' }
     ]
+    const Q5 = [
+        { key: 'Saw TV ads in IPL', value: 'Saw TV ads in IPL' },
+        { key: 'The startup team reached you', value: 'The startup team reached you' },
+        { key: 'Invited by your friend, just like people invite their friends to try Uber , rapido etc. ', value: 'Invited by your friend, just like people invite their friends to try Uber , rapido etc. ' }
+    ]
+    const Q6 = [
+        { key: 'It is the same thing.', value: 'It is the same thing.' },
+        { key: 'The USP of this game is actually learning to apply and providing', value: 'The USP of this game is actually learning to apply and providing' }
+    ]
+    const Q7 = [
+        { key: 'Rs. 2499', value: 'Rs. 2499' },
+        { key: 'Rs. 4499', value: 'Rs. 4499' },
+        { key: 'Rs. 2999', value: 'Rs. 2999' },
+        { key: 'Rs. 1999', value: 'Rs. 1999' }
+    ]
+    const Q8 = [
+        { key: 'No offer. MRP is fixed', value: 'By being invited by an existing player' },
+        { key: 'Rs. 1500/- discount, as early bird offer for month of April 2022, making the effective price to be Rs. 999', value: 'By purchasing from college library' },
+        { key: 'Rs. 500/- additional discount, making the effective price Rs. 499/-  ONLY if upgraded immediately after Worksheet 1.', value: 'By purchasing from college library' }
+    ]
+    const Q9 = [
+        { key: "No. It's an invite only product. ", value: "No. It's an invite only product" },
+        { key: "Yes. It's open for all.", value: "Yes. It's open for all." }
+    ]
+    const Q10 = [
+        { key: 'Online ( WhatsApp preferably)', value: 'Online ( WhatsApp preferably)' },
+        { key: 'Classroom', value: 'Classroom' }
+    ]
+
 
 
     return (
-        <div>
+        <motion.div initial={{ opacity: 0 }} transition={{ type: "spring", duration: 0.8, staggerChildren: 0.4 }} animate={{ opacity: 1 }}>
             <h2 className='level2__title'>Worksheet # 1</h2>
             <h1 className='level2__instruction'>Read the brochure and answer the following questions. Some questions do not have any correct answer as those are opinion based and are subjective. </h1>
             <h1 className="work__title">What is the name of the product or service you are offering as a Business Management Intern? [Quiz]</h1>
@@ -72,8 +102,50 @@ const Level2 = () => {
                 label=''
                 name='Q4'
             />
+            <h1 className="work__title">What mode of promotion reached you?  </h1>
+            <FormikControl
+                control='radio'
+                options={Q5}
+                label=''
+                name='Q5'
+            />
+            <h1 className="work__title">Why should people us this product when information is available for free in the internet, when there are lots of reputed certified courses available in the market? </h1>
+            <FormikControl
+                control='radio'
+                options={Q6}
+                label=''
+                name='Q6'
+            />
+            <h1 className="work__title">What is the MRP?  </h1>
+            <FormikControl
+                control='radio'
+                options={Q7}
+                label=''
+                name='Q7'
+            />
+            <h1 className="work__title">What is the special offer available for the current month ?  </h1>
+            <FormikControl
+                control='radio'
+                options={Q8}
+                label=''
+                name='Q8'
+            />
+            <h1 className="work__title">Is the product currently accessible to anyone who pays the price? </h1>
+            <FormikControl
+                control='radio'
+                options={Q9}
+                label=''
+                name='Q9'
+            />
+            <h1 className="work__title">Where is the game played currently?  </h1>
+            <FormikControl
+                control='radio'
+                options={Q10}
+                label=''
+                name='Q10'
+            />
 
-        </div>
+        </motion.div>
     )
 }
 

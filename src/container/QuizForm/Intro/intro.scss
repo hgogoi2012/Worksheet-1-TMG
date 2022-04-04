@@ -59,12 +59,14 @@
 
 
 
+
+
     .intro__headline {
         color: rgb(14, 14, 14);
-        font-family: 'Bree Serif', serif;
-        font-size: 28px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 38px;
         margin-bottom: 50px;
-        font-weight: bold;
+        font-weight: 200;
 
     }
 
@@ -75,9 +77,9 @@
 
     }
 
-    input {
+    .loginInput {
         height: 45px;
-        width: 100%;
+        width: 70%;
         margin-bottom: 40px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
