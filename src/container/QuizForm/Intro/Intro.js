@@ -19,18 +19,21 @@ const Intro = (props) => {
             .then((response) => response.json())
             .then((response) => {
                 response.find(function (abc) {
-                    if (abc.Pass == id) {
+                    if (abc.Pass === id) {
                         props.setAuth(true)
                         props.getData(id);
                         toast({
                             title: 'Sucess',
-                            description: "Logging in....",
+                            description: "Access Granted to Worksheet #1",
                             status: 'success',
                             duration: 3000,
                             isClosable: true,
                         })
+
+
                     }
                     setLoading(false)
+                    return (console.log("Login Check"))
                 });
 
             });

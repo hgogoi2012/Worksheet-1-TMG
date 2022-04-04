@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./quizform.scss";
 import { Formik, Form } from "formik";
-import * as Yup from "yup";
+// import * as Yup from "yup";
 
 import Level1 from "./Level1";
 import Level2 from "./Level2";
