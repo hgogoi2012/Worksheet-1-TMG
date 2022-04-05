@@ -11,7 +11,7 @@ const Intro = (props) => {
     const toast = useToast()
     const [loading, setLoading] = useState(false)
     const url =
-        "https://script.google.com/macros/s/AKfycbyzT_wK0TF9ea3_mtWM60KSadPSwr7hU9k5_sq0CYcx_cOhZ_79Tdtu-CkBImw-9yDB/exec";
+        "https://script.google.com/macros/s/AKfycbyYARmKsp30oXH3VHIutdAxkehqbUz0EdzQhYPSA-O-AKP7S0KEIRcGc8iGJaDdZEIUrA/exec";
 
     const handleClick = () => {
         setLoading(true)
@@ -87,7 +87,7 @@ const Intro = (props) => {
                     <p className='pre__para'>
                         You need to select the answers to the questions that are asked around our product i.e. The Marketing Game.</p>
                     <p className='pre__para'>The questions are of two types - (a) Quiz - to test your knowledge for correct answer (b) Survey - to understand your viewpoint about the product, the various aspects around it.</p>
-                    <Button className="pre__view" colorScheme='blue' onClick={() => setNext(true)}>View Worksheet 1</Button>
+                    <Button className="pre__view" colorScheme='blue' onClick={() => setNext(true)}>View Worksheet 2</Button>
                 </div>
             }
         </div>

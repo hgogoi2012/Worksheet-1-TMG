@@ -13,11 +13,13 @@ const initialValues = {
     name: "",
     email: "",
     number: "",
-    course: "",
+    Q2: [],
+    Q5: [],
+
 
 };
 
-const QuizForm = ({ Auth, setAuth, PDF, setPDF }) => {
+const QuizForm = ({ Auth, setAuth }) => {
     const [activeStep, setActiveStep] = useState(0);
     const [id, setId] = useState('')
 
@@ -25,7 +27,7 @@ const QuizForm = ({ Auth, setAuth, PDF, setPDF }) => {
     const [Loading, setLoading] = useState(false)
     const isEndStep = activeStep === 2;
     const isLastStep = activeStep === 1;
-    const url = "https://script.google.com/macros/s/AKfycbyzT_wK0TF9ea3_mtWM60KSadPSwr7hU9k5_sq0CYcx_cOhZ_79Tdtu-CkBImw-9yDB/exec"
+    const url = "https://script.google.com/macros/s/AKfycbyYARmKsp30oXH3VHIutdAxkehqbUz0EdzQhYPSA-O-AKP7S0KEIRcGc8iGJaDdZEIUrA/exec"
 
     // const currentValidationSchema = validationSchema[activeStep];
 
@@ -56,11 +58,6 @@ const QuizForm = ({ Auth, setAuth, PDF, setPDF }) => {
         const formData = new FormData();
         Object.keys(values).forEach(key => formData.append(key, values[key]));
         formData.set("name", id);
-
-
-
-
-
         console.log('normal', formData);
 
         fetch(url, {
@@ -88,7 +85,7 @@ const QuizForm = ({ Auth, setAuth, PDF, setPDF }) => {
 
 
     return (
-        <div onClick={() => { setPDF(false) }} className="form__Container">
+        <div className="form__Container">
             <Formik initialValues={initialValues} onSubmit={onSubmit} >
                 {({ isSubmitting }) => (
                     <Form className="quizContainer">
